@@ -31,5 +31,5 @@ Les illustrations du site ainsi que la rédaction de ce fichier README ont été
 
 Le projet est hébergé et accessible directement en ligne aux adresses suivantes :
 
-- Lien de la démo : https://izean.github.io/IFAPME_DEVFront-MargauxMatsEthan/MME0/
-- Lien du dépôt : https://github.com/izean/IFAPME_DEVFront-MargauxMatsEthan.git
+- Lien de la démo : https://ethanpyr2.github.io/IFAPME_PYR_ETHAN/labo1/
+- Lien du dépôt : https://github.com/EthanPyr2/IFAPME_PYR_ETHAN/tree/main/labo1
