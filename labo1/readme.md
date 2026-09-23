@@ -1,4 +1,4 @@
-st# Project MME Collective
+# Project MME Collective
 
 Projet de site web statique développé en HTML et CSS par Margaux, Mats et Ethan. L'objectif était de concevoir une plateforme vitrine présentant l'équipe, ses compétences ainsi que des pages personnelles pour chaque membre.
 
