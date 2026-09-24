@@ -1,60 +1,73 @@
 <!doctype html>
-<html lang="fr" xmlns="http://www.w3.org/1999/html">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Ethan</title>
-    <link rel="stylesheet" href="src/styles/main.scss" />
-  </head>
-  <body>
-  <header class="header">
-      <nav class="navbar">
-        <h1>Ethan Pyr</h1>
-        <ul>
-          <li>
-            <a href="personality.html" id="personality-text">Personnalité et intêret</a>
-          </li>
-          <li>
-            <a href="experience.html" id="experience-text">Expériences</a>
-          </li>
-          <li>
-            <a href="stacks.html" id="stacks-text">Compétences</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  <main>
-    <section class="hero">
-      <img src="#" alt="Photo of Ethan" />
-      <h2>Hey, je suis Ethan Pyr - Développeur Web</h2>
-        <div class="pulse-dot"></div>
-      <p>Disponible pour opportunités</p>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Ethan Pyr</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/main.scss" />
+</head>
+<body>
 
-    </section>
-    <section class="link-card-container">
-      <div class="link-card">
-        <h2 id="date">Portfolio / 2026</h2>
-        <h2 id="location">Liège, Belgique</h2>
-        <h3>Développement Web & Interfaces</h3>
-        <p>Concevoir des expériences web modernes et structurées.</p>
-        <div class="limiter"></div>
-        <a href="mailto:ethan.pyr@apprenant.ifapme.be" id="contact">Me contacter</a>
-        <a href="#" download="CV-Ethan.pdf" id="cv">Télécharger mon CV</a>
-        <a href="https://github.com/Ethanpyr2" id="github" >GitHub</a>
-        <a href="linkedin/ethanpyr" id="linkedin">LInkedin</a>
-        <a href="discord/ethanpyr" id="discord">Discord</a>
+<header class="header">
+  <nav class="navbar">
+    <a href="#" class="logo">ETHAN PYR</a>
+    <ul class="nav-links">
+      <li><a href="personality.html">Personnalité & intérêts</a></li>
+      <li><a href="experience.html">Expériences</a></li>
+      <li><a href="stacks.html">Compétences</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main-layout">
+  <section class="hero-card">
+    <div class="hero-image-wrapper">
+      <img src="#" alt="Photo d'Ethan Pyr" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <h2>Hey, je suis Ethan Pyr —<br>Développeur Web</h2>
+      <div class="status-badge">
+        <span class="pulse-dot"></span>
+        <span>DISPONIBLE POUR OPPORTUNITÉS</span>
       </div>
-    </section>
-    <section class="cards-container">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-    </section>
-  </main>
-  <footer>
-    <p>© Ethan Pyr</p>
-  </footer>
+    </div>
+  </section>
+  <section class="info-card">
+    <div class="card-header">
+      <span class="meta-text">PORTFOLIO / 2026</span>
+      <span class="meta-text">LIÈGE, BELGIQUE</span>
+    </div>
 
+    <div class="card-body">
+      <span class="subtitle">DÉVELOPPEMENT WEB & INTERFACES</span>
+      <h1 class="main-title">Concevoir des expériences web modernes et structurées.</h1>
+    </div>
 
-  </body>
+    <div class="card-footer">
+      <div class="cta-group">
+        <a href="mailto:ethan.pyr@apprenant.ifapme.be" class="btn btn-primary">
+          Me contacter <span class="arrow">↗</span>
+        </a>
+        <a href="#" download="CV-Ethan.pdf" class="btn btn-secondary">
+          <span class="icon">↓</span> Télécharger mon CV
+        </a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/Ethanpyr2" aria-label="GitHub" class="social-btn">GH</a>
+        <a href="https://linkedin.com" aria-label="LinkedIn" class="social-btn">IN</a>
+        <a href="https://discord.com" aria-label="Discord" class="social-btn">DC</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© Ethan Pyr — 2026</p>
+</footer>
+
+</body>
 </html>
