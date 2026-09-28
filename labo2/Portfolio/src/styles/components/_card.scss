@@ -1,0 +1,31 @@
+@use '../abstract/variables' as * ;
+
+.info-card {
+  position: relative;
+  background-color: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+
+  .card-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: $text-secondary;
+    letter-spacing: 2px;
+  }
+  .card-body {
+    margin: 2rem 0;
+  }
+  .subtitle{
+    color: $green;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+}
