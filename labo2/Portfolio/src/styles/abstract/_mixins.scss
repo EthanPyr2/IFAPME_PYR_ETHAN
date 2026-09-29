@@ -1,7 +1,19 @@
+@use 'variables' as * ;
+
 @mixin space-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+@mixin card {
+  position: relative;
+  background-color: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
 }

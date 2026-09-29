@@ -2,11 +2,13 @@
 @use '../abstract/mixins' as * ;
 
 #contact {
-  text-decoration : none;
+  text-decoration: none;
 }
-.card-footer{
-@include space-between;
+
+.card-footer {
+  @include space-between;
 }
+
 .cta-group {
   @include space-between;
 
@@ -26,6 +28,7 @@
 
   }
 }
+
 .social-btn {
   border: 1px solid rgb(156 163 175 / 0.34);
   border-radius: 12px;
