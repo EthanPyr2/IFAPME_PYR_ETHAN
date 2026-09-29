@@ -1,3 +1,34 @@
+@use '../abstract/variables' as * ;
+@use '../abstract/mixins' as * ;
+
 #contact {
   text-decoration : none;
 }
+.card-footer{
+@include space-between;
+}
+.cta-group {
+  @include space-between;
+
+  .btn {
+
+    border-radius: 12px;
+    padding: 1rem;
+
+    &.btn-primary {
+      border: 1px solid $text-primary;
+    }
+
+    &.btn-secondary {
+      border: 1px solid rgb(156 163 175 / 0.34);
+    }
+
+
+  }
+}
+.social-btn {
+  border: 1px solid rgb(156 163 175 / 0.34);
+  border-radius: 12px;
+  padding: 0.8rem;
+}
+
