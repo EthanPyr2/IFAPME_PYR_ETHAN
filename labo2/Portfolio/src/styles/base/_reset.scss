@@ -13,9 +13,8 @@ body {
   line-height: 1.5;
   min-height: 100vh;
   padding: 1.5rem;
-  background-image:
-          linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-          linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+  linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 

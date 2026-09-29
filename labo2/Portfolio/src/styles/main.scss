@@ -1,6 +1,6 @@
 // config
-@use 'abstract/variables' ;
-@use 'abstract/mixins' ;
+@use 'abstract/variables';
+@use 'abstract/mixins';
 
 // base
 @use 'base/reset';
@@ -12,5 +12,5 @@
 
 // composants
 @use 'components/card';
-@use 'components/hero'  ;
-@use 'components/button'  ;
+@use 'components/hero';
+@use 'components/button';

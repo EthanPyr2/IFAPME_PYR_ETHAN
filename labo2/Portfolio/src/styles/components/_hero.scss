@@ -1,16 +1,10 @@
 @use '../abstract/variables' as *;
+@use '../abstract/mixins' as * ;
 
 .hero-card {
-  position: relative;
-  background-color: $bg-card;
-  border: 1px solid $border-color;
-  border-radius: 12px;
-  overflow: hidden;
-  height: 520px;
-  display: flex;
-  flex-direction: column;
+  @include card;
+  height: 80vh;
   justify-content: flex-end;
-  padding: 2rem;
 
   .hero-image-wrapper {
     position: absolute;
