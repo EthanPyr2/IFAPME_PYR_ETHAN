@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles/main.scss"/>
+
 </head>
 <body>
 
@@ -52,23 +53,23 @@
         <div class="card-footer">
             <div class="cta-group">
                 <a href="mailto:ethan.pyr@apprenant.ifapme.be" class="btn btn-primary">
-                    Me contacter <span class="arrow">↗</span>
+                    Me contacter <span class="arrow"><i class="fa-solid fa-paper-plane"></i></span>
                 </a>
                 <a href="#" download="CV-Ethan.pdf" class="btn btn-secondary">
-                    <span class="icon">↓</span> Télécharger mon CV
+                    <span class="icon"><i class="fa-solid fa-download"></i></span> Télécharger mon CV
                 </a>
             </div>
             <div class="social-links">
-                <a href="https://github.com/Ethanpyr2" aria-label="GitHub" class="social-btn">GH</a>
-                <a href="https://linkedin.com" aria-label="LinkedIn" class="social-btn">IN</a>
-                <a href="https://discord.com" aria-label="Discord" class="social-btn">DC</a>
+                <a href="https://github.com/Ethanpyr2" aria-label="GitHub" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" aria-label="LinkedIn" class="social-btn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://discord.com" aria-label="Discord" class="social-btn"><i class="fa-brands fa-discord"></i></a>
             </div>
         </div>
     </section>
-    <section>
-        <div class="card form-warp">
-            <h2 class="form-title">Futur collaborations ?</h2>
+    <section class ='form-card'>
+            <h2 class="form-title">Futur collaboration ?</h2>
             <p>Contactez-moi !</p>
+        <div class="card form-warp">
             <form action="#" method="POST">
                 <label for="Nom">Nom</label>
                 <input type="text" name="Nom" placeholder="Nom" required id="Nom">
@@ -76,6 +77,7 @@
                 <input type="email" name="Email" placeholder="Email" required id="Email">
                 <label for="Message">Message</label>
                 <textarea name="Message" placeholder="Message" required id="Message"></textarea>
+                <button type="submit" class="submit-btn">Envoyer</button>
 
 
             </form>
@@ -84,8 +86,10 @@
 </main>
 
 <footer>
-    <p>© Ethan Pyr — 2026</p>
+    <div class="divider"></div>
+    <p id="copyright">© Ethan Pyr — 2026</p>
 </footer>
+<script src="https://kit.fontawesome.com/9a477456de.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
