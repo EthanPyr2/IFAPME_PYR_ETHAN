@@ -2,9 +2,12 @@
 @use '../abstract/mixins' as * ;
 
 .divider {
-  margin: 2rem 0;
-  border: 1px solid $text-secondary;
-  width: 100%;
+  display: none;
+  @media(min-width: 768px) {
+    margin: 2rem 0;
+    border: 1px solid $text-secondary;
+    width: 100%;
+  }
 }
 #copyright{
   display: flex;
