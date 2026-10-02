@@ -3,8 +3,9 @@
 
 .info-card {
   @include card;
-  height: 90vh;
+  height: 80vh;
   justify-content: space-between;
+
 
 
   .card-header {
@@ -13,6 +14,9 @@
     font-size: 0.7rem;
     color: $text-secondary;
     letter-spacing: 2px;
+    @media(min-width: 768px){
+      font-size: 1rem;
+    }
   }
 
   .card-body {
@@ -25,11 +29,25 @@
     letter-spacing: 2px;
     font-weight: 600;
     margin-bottom: 1rem;
+    @media(min-width: 768px){
+      font-size: 1rem;
+    }
+  }
+  .main-title{
+    @media(min-width: 768px){
+      font-size: 4.5rem;
+    }
   }
   .fa-download {
     color: $green;
   }
   .fa-paper-plane{
     color: $green;
+  }
+  @media(min-width: 768px){
+    width: 56vw;
+    padding: 4rem;
+    height: 90vh;
+    margin: 4rem auto;
   }
 }

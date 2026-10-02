@@ -1,4 +1,5 @@
 @use '../abstract/variables.scss' as *;
+@use '../abstract/mixins.scss' as *;
 
 .navbar {
   position: fixed;
@@ -18,6 +19,11 @@
     font-size: 0.8rem;
     align-items: center;
     margin-right: 0.5rem;
+
+    @media(min-width: 768px){
+      margin: auto 2rem;
+      font-size: 1rem;
+    }
   }
 
   .nav-links {
@@ -26,19 +32,40 @@
     gap: 2rem;
     list-style: none;
 
-    a {
+    @media(min-width: 768px) {
+      gap: 6rem;
+      margin-left: 50vw;
+      }
+    }
+
+    li {
       font-size: 0.8rem;
       color: $text-secondary;
       transition: color 0.2s;
 
       &:hover, &.active {
         color: $text-primary;
+        @media(min-width: 768px){
+          text-decoration: underline;
+        }
+      }
+      @media(min-width: 768px) {
+        font-size: 1rem;
       }
     }
-  }
+
 
 
   @media (min-width: 768px) {
-    display: none;
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    background-color: $bg-card;
+    border: 1px solid $border-color;
+    border-radius: 12px;
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+    width: 92vw;
   }
 }
