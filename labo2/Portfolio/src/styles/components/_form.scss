@@ -8,26 +8,28 @@
     @include card;
     width: 100%;
 
-    .label{
+    .label {
       @include center;
     }
 
-    input{
+    input {
       background-color: $border-color;
       border-radius: 12px;
       color: $text-primary;
       padding: 0.5rem;
       @include center;
     }
-    textarea{
+
+    textarea {
       @include center;
       background-color: $border-color;
       border-radius: 12px;
       color: $text-primary;
       padding: 0.5rem;
     }
-    button{
-     @include center;
+
+    button {
+      @include center;
       background-color: $border-color;
       border-radius: 12px;
       color: $text-primary;
@@ -35,11 +37,12 @@
       margin: 0.5rem;
 
 
-      &:hover{
+      &:hover {
         transform: scale(110%);
 
       }
-      &:active{
+
+      &:active {
         background-color: $text-primary;
         color: $border-color;
       }

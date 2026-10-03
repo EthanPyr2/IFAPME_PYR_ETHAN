@@ -20,7 +20,7 @@
     align-items: center;
     margin-right: 0.5rem;
 
-    @media(min-width: 768px){
+    @media(min-width: 768px) {
       margin: auto 2rem;
       font-size: 1rem;
     }
@@ -35,25 +35,25 @@
     @media(min-width: 768px) {
       gap: 6rem;
       margin-left: 50vw;
-      }
     }
+  }
 
-    li {
-      font-size: 0.8rem;
-      color: $text-secondary;
-      transition: color 0.2s;
+  li {
+    font-size: 0.8rem;
+    color: $text-secondary;
+    transition: color 0.2s;
 
-      &:hover, &.active {
-        color: $text-primary;
-        @media(min-width: 768px){
-          text-decoration: underline;
-        }
-      }
+    &:hover, &.active {
+      color: $text-primary;
       @media(min-width: 768px) {
-        font-size: 1rem;
+        text-decoration: underline;
       }
     }
 
+    @media(min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
 
 
   @media (min-width: 768px) {

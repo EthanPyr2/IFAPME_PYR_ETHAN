@@ -7,14 +7,13 @@
   justify-content: space-between;
 
 
-
   .card-header {
     display: flex;
     justify-content: space-between;
     font-size: 0.7rem;
     color: $text-secondary;
     letter-spacing: 2px;
-    @media(min-width: 768px){
+    @media(min-width: 768px) {
       font-size: 1rem;
     }
   }
@@ -29,22 +28,26 @@
     letter-spacing: 2px;
     font-weight: 600;
     margin-bottom: 1rem;
-    @media(min-width: 768px){
+    @media(min-width: 768px) {
       font-size: 1rem;
     }
   }
-  .main-title{
-    @media(min-width: 768px){
+
+  .main-title {
+    @media(min-width: 768px) {
       font-size: 4.5rem;
     }
   }
+
   .fa-download {
     color: $green;
   }
-  .fa-paper-plane{
+
+  .fa-paper-plane {
     color: $green;
   }
-  @media(min-width: 768px){
+
+  @media(min-width: 768px) {
     width: 56vw;
     padding: 4rem;
     height: 90vh;

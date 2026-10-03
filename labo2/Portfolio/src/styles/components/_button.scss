@@ -24,10 +24,11 @@
     &.btn-secondary {
       border: 1px solid rgb(156 163 175 / 0.34);
     }
-    @media(min-width: 768px){
+
+    @media(min-width: 768px) {
       font-size: 1.3rem;
       transition: transform 0.3s ease-in-out;
-      &:hover{
+      &:hover {
         transform: scale(110%);
       }
     }
@@ -40,14 +41,14 @@
   border-radius: 12px;
   padding: 0.8rem;
 
-  @media(min-width: 768px){
+  @media(min-width: 768px) {
     font-size: 1.3rem;
     padding: 1rem;
     margin: auto 0.8rem;
     transition: color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
 
-    &:hover{
+    &:hover {
       background-color: $text-primary;
       color: $bg-card;
     }
