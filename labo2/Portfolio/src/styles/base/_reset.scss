@@ -1,5 +1,7 @@
 @use '../abstract/variables' as *;
-
+html {
+  scroll-behavior: smooth; // Active le défilement fluide global
+}
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
