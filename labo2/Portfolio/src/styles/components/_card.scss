@@ -27,13 +27,13 @@
     letter-spacing: 2px;
     font-weight: 600;
     margin-bottom: 1rem;
-    @media(min-width: 768px) {
+    @media(min-width: 1024px) {
       font-size: 1rem;
     }
   }
 
   .main-title {
-    @media(min-width: 768px) {
+    @media(min-width: 1024px) {
       font-size: 4.5rem;
     }
   }
@@ -46,7 +46,7 @@
     color: $green;
   }
 
-  @media(min-width: 768px) {
+  @media(min-width: 1024px) {
     width: 56vw;
     padding: 4rem;
     height: 90vh;
