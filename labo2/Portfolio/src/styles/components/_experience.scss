@@ -1,0 +1,204 @@
+@use '../abstract/variables' as *;
+@use '../abstract/mixins' as *;
+
+.experience-content {
+  @include card;
+  grid-column: 1 / -1;
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+
+  .card-header {
+    @include space-between;
+    font-size: 0.7rem;
+    color: $text-secondary;
+    letter-spacing: 2px;
+    @media(min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
+  .subtitle {
+    display: block;
+    color: $green;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    @media(min-width: 1024px) {
+      font-size: 1rem;
+    }
+  }
+
+  .main-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    @media(min-width: 768px) {
+      font-size: 3rem;
+    }
+    @media(min-width: 1024px) {
+      font-size: 4.5rem;
+    }
+  }
+
+  @media(min-width: 1024px) {
+    width: 80vw;
+    padding: 4rem;
+    margin: 4rem auto 6rem;
+  }
+}
+
+.timeline-section {
+  .category-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid $border-color;
+    @media(min-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .category-index {
+    color: $green;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+}
+
+
+.timeline {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid $border-color;
+  margin-left: 0.4rem;
+
+  @media(min-width: 768px) {
+    padding-left: 2.5rem;
+    gap: 2rem;
+  }
+}
+
+.timeline-item {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 1.6rem;
+    left: calc(-1.5rem - 6px);
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: $bg-main;
+    border: 2px solid $green;
+    @media(min-width: 768px) {
+      left: calc(-2.5rem - 6px);
+    }
+  }
+}
+
+.timeline-card {
+  padding: 1.25rem;
+  background-color: $bg-main;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+  @media(min-width: 768px) {
+    padding: 1.5rem 2rem;
+  }
+
+  .timeline-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    @media(min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      column-gap: 2rem;
+    }
+  }
+
+  .timeline-title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    @media(min-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .timeline-place {
+    color: $text-secondary;
+    font-size: 0.85rem;
+    @media(min-width: 768px) {
+      grid-row: 2;
+      font-size: 0.95rem;
+    }
+  }
+
+  .timeline-date {
+    color: $green;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    @media(min-width: 768px) {
+      grid-column: 2;
+      grid-row: 1;
+      text-align: right;
+      font-size: 0.85rem;
+    }
+  }
+
+  .timeline-status {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.1rem 0.5rem;
+    color: $text-secondary;
+    border: 1px solid $border-color;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    letter-spacing: 0;
+  }
+
+  .timeline-details {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid $border-color;
+    color: $text-secondary;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    @media(min-width: 768px) {
+      font-size: 0.95rem;
+    }
+
+    li {
+      position: relative;
+      padding-left: 1rem;
+
+      &::before {
+        content: '—';
+        position: absolute;
+        left: 0;
+        color: $green;
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: $green;
+  }
+}

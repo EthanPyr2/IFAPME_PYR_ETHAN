@@ -1,0 +1,119 @@
+@use '../abstract/variables' as *;
+@use '../abstract/mixins' as *;
+
+.skills-content {
+  @include card;
+  grid-column: 1 / -1;
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+
+  .card-header {
+    @include space-between;
+    font-size: 0.7rem;
+    color: $text-secondary;
+    letter-spacing: 2px;
+    @media(min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
+  .subtitle {
+    display: block;
+    color: $green;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    @media(min-width: 1024px) {
+      font-size: 1rem;
+    }
+  }
+
+  .main-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    @media(min-width: 768px) {
+      font-size: 3rem;
+    }
+    @media(min-width: 1024px) {
+      font-size: 4.5rem;
+    }
+  }
+
+  @media(min-width: 1024px) {
+    width: 80vw;
+    padding: 4rem;
+    margin: 4rem auto 6rem;
+  }
+}
+
+.skill-category {
+  .category-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid $border-color;
+    @media(min-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .category-index {
+    color: $green;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+}
+
+.skills-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  @media(min-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+.skill-card {
+  @include center;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  background-color: $bg-main;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+  i {
+    font-size: 1.8rem;
+    color: $text-secondary;
+    transition: color 0.3s ease-in-out;
+    @media(min-width: 768px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  .skill-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    @media(min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: $green;
+
+    i {
+      color: $green;
+    }
+  }
+}
