@@ -1,10 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Expériences - Ethan Pyr</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/main.scss"/>
 </head>
 <body>
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">ETHAN PYR</a>
+        <div class="burger">
+            <ul class="nav-links">
+                <li><a href="project.html">Projets</a></li>
+                <li><a href="experience.html">Expériences</a></li>
+                <li><a href="stacks.html">Compétences</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="main-layout">
+    <section class="experience-content" aria-labelledby="experience-title">
+        <header class="card-header">
+            <span class="meta-text">EXPÉRIENCES / PARCOURS</span>
+            <span class="meta-text">2020 — 2026</span>
+        </header>
 
+        <div class="experience-intro">
+            <span class="subtitle">PARCOURS PROFESSIONNEL & FORMATION</span>
+            <h1 class="main-title" id="experience-title">Mon parcours, du plus récent au plus ancien.</h1>
+        </div>
+
+        <section class="timeline-section" aria-labelledby="section-pro">
+            <h2 class="category-title" id="section-pro">
+                <span class="category-index">01</span> Expériences professionnelles
+            </h2>
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <article class="timeline-card">
+                        <header class="timeline-header">
+                            <h3 class="timeline-title">Génie de Combat, Militaire</h3>
+                            <p class="timeline-place">La Défense, Amay</p>
+                            <p class="timeline-date">
+                                <time datetime="2024">2024</time> – <time datetime="2026">2026</time>
+                            </p>
+                        </header>
+                        <ul class="timeline-details">
+                            <li>Exécution de missions logistiques sous forte contrainte et dans un cadre exigeant</li>
+                            <li>Travail d'équipe, gestion du stress et résolution rapide de problèmes sur le terrain</li>
+                        </ul>
+                    </article>
+                </li>
+                <li class="timeline-item">
+                    <article class="timeline-card">
+                        <header class="timeline-header">
+                            <h3 class="timeline-title">Employé polyvalent</h3>
+                            <p class="timeline-place">Lasea</p>
+                            <p class="timeline-date">
+                                <time datetime="2023">2023</time> – <time datetime="2024">2024</time>
+                            </p>
+                        </header>
+                        <ul class="timeline-details">
+                            <li>Multi-secteur : Field Service Engineering, Production, Application, Supply Chain</li>
+                        </ul>
+                    </article>
+                </li>
+            </ol>
+        </section>
+
+        <section class="timeline-section" aria-labelledby="section-formation">
+            <h2 class="category-title" id="section-formation">
+                <span class="category-index">02</span> Formation
+            </h2>
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <article class="timeline-card">
+                        <header class="timeline-header">
+                            <h3 class="timeline-title">Développeur Web</h3>
+                            <p class="timeline-place">IFAPME Liège</p>
+                            <p class="timeline-date">
+                                <time datetime="2026-09">Septembre 2026</time> – Aujourd'hui
+                            </p>
+                        </header>
+                    </article>
+                </li>
+                <li class="timeline-item">
+                    <article class="timeline-card">
+                        <header class="timeline-header">
+                            <h3 class="timeline-title">Sapeur / Pionnier</h3>
+                            <p class="timeline-date">
+                                <time datetime="2024">2024</time> – <time datetime="2025">2025</time>
+                            </p>
+                        </header>
+                        <ul class="timeline-details">
+                            <li>Formation Sapeur (<time datetime="2024">2024</time>)</li>
+                            <li>Formation Pionnier (<time datetime="2025">2025</time>)</li>
+                            <li>Spécialisation sur les explosifs</li>
+                        </ul>
+                    </article>
+                </li>
+                <li class="timeline-item">
+                    <article class="timeline-card">
+                        <header class="timeline-header">
+                            <h3 class="timeline-title">Bachelier en sciences de l'ingénieur industriel</h3>
+                            <p class="timeline-place">GRAMME</p>
+                            <p class="timeline-date">
+                                <time datetime="2020">2020</time> – <time datetime="2023">2023</time>
+                                <span class="timeline-status">Non terminé</span>
+                            </p>
+                        </header>
+                    </article>
+                </li>
+            </ol>
+        </section>
+    </section>
+</main>
+<footer>
+    <div class="divider"></div>
+    <p id="copyright">© Ethan Pyr — 2026</p>
+</footer>
+<script src="https://kit.fontawesome.com/9a477456de.js" crossorigin="anonymous"></script>
 </body>
 </html>
