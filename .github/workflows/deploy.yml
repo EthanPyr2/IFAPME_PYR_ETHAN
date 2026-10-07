@@ -1,0 +1,54 @@
+name: Déploiement GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: labo2/Portfolio
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: labo2/Portfolio/package-lock.json
+      - run: npm ci
+      - run: npm run build
+      # Les pages référencent public/... : on garde une copie du dossier dans le build
+      - run: cp -r public dist/public
+      # Le site publié reprend tout le dépôt, avec labo2/Portfolio remplacé par le build
+      - name: Assemblage du site
+        working-directory: .
+        run: |
+          mkdir _site
+          rsync -a --exclude .git --exclude .github --exclude node_modules --exclude _site ./ _site/
+          rm -rf _site/labo2/Portfolio
+          cp -r labo2/Portfolio/dist _site/labo2/Portfolio
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
