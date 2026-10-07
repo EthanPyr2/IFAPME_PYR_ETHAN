@@ -1,10 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Compétences - Ethan Pyr</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/main.scss"/>
 </head>
 <body>
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">ETHAN PYR</a>
+        <div class="burger">
+            <ul class="nav-links">
+                <li><a href="project.html">Projets</a></li>
+                <li><a href="experience.html">Expériences</a></li>
+                <li><a href="stacks.html">Compétences</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="main-layout">
+    <section class="skills-content" aria-labelledby="skills-title">
+        <header class="card-header">
+            <span class="meta-text">COMPÉTENCES / STACK</span>
+            <span class="meta-text">16 TECHNOLOGIES</span>
+        </header>
 
+        <div class="skills-intro">
+            <span class="subtitle">OUTILS & TECHNOLOGIES</span>
+            <h1 class="main-title" id="skills-title">Ma stack technique au quotidien.</h1>
+        </div>
+
+        <section class="skill-category" aria-labelledby="cat-frontend">
+            <h2 class="category-title" id="cat-frontend">
+                <span class="category-index">01</span> Frontend
+            </h2>
+            <ul class="skills-grid">
+                <li class="skill-card">
+                    <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                    <span class="skill-name">HTML</span>
+                </li>
+                <li class="skill-card">
+                    <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                    <span class="skill-name">CSS</span>
+                </li>
+                <li class="skill-card">
+                    <i class="fa-brands fa-sass" aria-hidden="true"></i>
+                    <span class="skill-name">SCSS</span>
+                </li>
+                <li class="skill-card">
+                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                    <span class="skill-name">JavaScript</span>
+                </li>
+                <li class="skill-card">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                    <span class="skill-name">TypeScript</span>
+                </li>
+                <li class="skill-card">
+                    <i class="fa-brands fa-angular" aria-hidden="true"></i>
+                    <span class="skill-name">Angular</span>
+                </li>
+                <li class="skill-card">
+                    <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                    <span class="skill-name">Vite</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="skill-category" aria-labelledby="cat-backend">
+            <h2 class="category-title" id="cat-backend">
+                <span class="category-index">02</span> Backend & Données
+            </h2>
+            <ul class="skills-grid">
+                <li class="skill-card">
+                    <i class="fa-brands fa-java" aria-hidden="true"></i>
+                    <span class="skill-name">Java</span>
+                </li>
+                <li class="skill-card">
+                    <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+                    <span class="skill-name">Spring Boot</span>
+                </li>
+                <li class="skill-card">
+                    <i class="fa-solid fa-database" aria-hidden="true"></i>
+                    <span class="skill-name">SQL Server</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="skill-category" aria-labelledby="cat-tools">
+            <h2 class="category-title" id="cat-tools">
+                <span class="category-index">03</span> Outils & Environnement
+            </h2>
+            <ul class="skills-grid">
+                <li class="skill-card">
+                    <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+                    <span class="skill-name">Git</span>
+                </li>
+                <li class="skill-card">
+                    <i class="fa-brands fa-docker" aria-hidden="true"></i>
+                    <span class="skill-name">Docker</span>
+                </li>
+                <li class="skill-card">
+                    <i class="fa-brands fa-fedora" aria-hidden="true"></i>
+                    <span class="skill-name">Fedora</span>
+                </li>
+                <li class="skill-card">
+                    <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                    <span class="skill-name">WebStorm</span>
+                </li>
+                <li class="skill-card">
+                    <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                    <span class="skill-name">VS Code</span>
+                </li>
+                <li class="skill-card">
+                    <i class="fa-solid fa-chart-column" aria-hidden="true"></i>
+                    <span class="skill-name">Power BI</span>
+                </li>
+                <li class="skill-card">
+                    <i class="fa-solid fa-file-excel" aria-hidden="true"></i>
+                    <span class="skill-name">Excel</span>
+                </li>
+            </ul>
+        </section>
+    </section>
+</main>
+<footer>
+    <div class="divider"></div>
+    <p id="copyright">© Ethan Pyr — 2026</p>
+</footer>
+<script src="https://kit.fontawesome.com/9a477456de.js" crossorigin="anonymous"></script>
 </body>
 </html>
