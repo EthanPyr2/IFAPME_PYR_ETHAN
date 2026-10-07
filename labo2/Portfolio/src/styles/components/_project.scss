@@ -1,0 +1,29 @@
+@use '../abstract/variables' as *;
+@use '../abstract/mixins' as *;
+
+.pending {
+  @include center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+  text-align: center;
+
+  .fa-person-digging {
+    font-size: 5rem;
+    color: $green;
+
+    @media (min-width: 768px) {
+      font-size: 7rem;
+    }
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $text-primary;
+
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+}
